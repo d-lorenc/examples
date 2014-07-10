@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!DOCTYPE Configure PUBLIC "-//Mort Bay Consulting//DTD Configure//EN" "http://jetty.eclipse.org/configure.dtd">
+
+<!-- =============================================================== -->
+<!-- Configure the Jetty Server -->
+<!-- -->
+<!-- Documentation of this file format can be found at: -->
+<!-- http://docs.codehaus.org/display/JETTY/jetty.xml -->
+<!-- -->
+<!-- =============================================================== -->
+
+
+<Configure id="Server" class="org.eclipse.jetty.server.Server">
+
+	<Set name="connectors">
+		<Array type="org.eclipse.jetty.server.Connector">
+			<Item>
+				<New class="org.eclipse.jetty.server.ServerConnector">
+					<Arg name="server">
+						<Ref refid="Server" />
+					</Arg>
+					<Arg name="factories"><!-- insert one or more factories here -->
+					</Arg>
+					<Set name="port">
+						<Property name="jetty.port" default="8080" />
+					</Set>
+				</New>
+			</Item>
+		</Array>
+	</Set>
+
+<!-- 
+	<Call name="addBean">
+		<Arg>
+			<New class="me.lorenc.rest.beer.error.JsonFormatErrorHandler" />
+		</Arg>
+	</Call>
+ -->
+
+	<!-- =========================================================== -->
+	<!-- extra options -->
+	<!-- =========================================================== -->
+	<Set name="stopAtShutdown">true</Set>
+</Configure>
