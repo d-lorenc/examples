@@ -4,7 +4,7 @@
 		<servlet-name>beer-dispenser</servlet-name>
 		<init-param>
 			<param-name>javax.ws.rs.Application</param-name>
-			<param-value>me.lorenc.rest.beer.BeerDispenserApplication</param-value>
+			<param-value>me.lorenc.workshop.rest.beer.BeerDispenserApplication</param-value>
 		</init-param>
 	</servlet>
 

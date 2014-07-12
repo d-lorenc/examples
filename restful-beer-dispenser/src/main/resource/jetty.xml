@@ -32,7 +32,7 @@
 <!-- 
 	<Call name="addBean">
 		<Arg>
-			<New class="me.lorenc.rest.beer.error.JsonFormatErrorHandler" />
+			<New class="me.lorenc.workshop.rest.beer.error.JsonFormatErrorHandler" />
 		</Arg>
 	</Call>
  -->
