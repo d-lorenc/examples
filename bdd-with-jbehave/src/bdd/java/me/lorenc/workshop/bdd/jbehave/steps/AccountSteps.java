@@ -1,4 +1,4 @@
-package com.dlorenc.examples.bdd.jbehave.steps;
+package me.lorenc.workshop.bdd.jbehave.steps;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
@@ -6,12 +6,12 @@ import static org.junit.Assert.assertNotNull;
 import java.math.BigDecimal;
 import java.util.List;
 
+import me.lorenc.workshop.bdd.jbehave.BankAccount;
+
 import org.jbehave.core.annotations.Alias;
 import org.jbehave.core.annotations.Given;
 import org.jbehave.core.annotations.Then;
 import org.jbehave.core.annotations.When;
-
-import com.dlorenc.examples.bdd.jbehave.BankAccount;
 
 public class AccountSteps {
 

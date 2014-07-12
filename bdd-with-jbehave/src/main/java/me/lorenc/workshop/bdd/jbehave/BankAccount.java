@@ -1,4 +1,4 @@
-package com.dlorenc.examples.bdd.jbehave;
+package me.lorenc.workshop.bdd.jbehave;
 
 import java.math.BigDecimal;
 

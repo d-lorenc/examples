@@ -1,4 +1,4 @@
-package com.dlorenc.examples.bdd.jbehave.rest;
+package me.lorenc.workshop.bdd.jbehave.rest;
 
 import java.math.BigDecimal;
 
@@ -9,7 +9,7 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.Response.Status;
 
-import com.dlorenc.examples.bdd.jbehave.BankAccount;
+import me.lorenc.workshop.bdd.jbehave.BankAccount;
 
 @Path("/account")
 public class AccountResource {

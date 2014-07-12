@@ -1,4 +1,4 @@
-package com.dlorenc.examples.bdd.jbehave.account;
+package me.lorenc.workshop.bdd.jbehave.account;
 
 import static org.jbehave.core.reporters.Format.CONSOLE;
 import static org.jbehave.core.reporters.Format.HTML;
@@ -8,6 +8,9 @@ import static org.jbehave.core.reporters.Format.XML;
 import java.text.SimpleDateFormat;
 import java.util.List;
 import java.util.Properties;
+
+import me.lorenc.workshop.bdd.jbehave.steps.AccountSteps;
+import me.lorenc.workshop.bdd.jbehave.steps.RestAccountSteps;
 
 import org.jbehave.core.Embeddable;
 import org.jbehave.core.configuration.Configuration;
@@ -29,9 +32,6 @@ import org.jbehave.core.steps.ParameterConverters;
 import org.jbehave.core.steps.ParameterConverters.DateConverter;
 import org.jbehave.core.steps.ParameterConverters.ExamplesTableConverter;
 import org.junit.runner.RunWith;
-
-import com.dlorenc.examples.bdd.jbehave.steps.AccountSteps;
-import com.dlorenc.examples.bdd.jbehave.steps.RestAccountSteps;
 
 import de.codecentric.jbehave.junit.monitoring.JUnitReportingRunner;
 

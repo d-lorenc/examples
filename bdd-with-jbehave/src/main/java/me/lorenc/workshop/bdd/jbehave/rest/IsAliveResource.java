@@ -1,4 +1,4 @@
-package com.dlorenc.examples.bdd.jbehave.rest;
+package me.lorenc.workshop.bdd.jbehave.rest;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;

@@ -1,4 +1,4 @@
-package com.dlorenc.examples.bdd.jbehave.steps;
+package me.lorenc.workshop.bdd.jbehave.steps;
 
 import static com.jayway.restassured.RestAssured.when;
 import static org.hamcrest.Matchers.equalTo;
@@ -6,14 +6,15 @@ import static org.junit.Assert.assertEquals;
 
 import java.math.BigDecimal;
 
+import me.lorenc.workshop.bdd.jbehave.rest.AccountResource;
+import me.lorenc.workshop.bdd.jbehave.rest.AccountRestService;
+
 import org.jbehave.core.annotations.AfterScenario;
 import org.jbehave.core.annotations.Given;
 import org.jbehave.core.annotations.ScenarioType;
 import org.jbehave.core.annotations.Then;
 import org.jbehave.core.annotations.When;
 
-import com.dlorenc.examples.bdd.jbehave.rest.AccountResource;
-import com.dlorenc.examples.bdd.jbehave.rest.AccountRestService;
 import com.jayway.restassured.response.Response;
 
 public class RestAccountSteps {
